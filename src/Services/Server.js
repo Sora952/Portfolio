@@ -7,9 +7,9 @@ const PORT =
 
 app.use(express.json());
 
-app.use('/ingredients', require('./routes/ingredient.routes.js'));
-app.use('/meal_types', require('./routes/meal_types.routes.js'));
-app.use('/meal_type_recipes', require('./routes/meal_type_recipes.routes.js'));
+app.use('/projects', require('./routes/projects.routes.js'));
+app.use('/languages', require('./routes/languages.routes.js'));
+app.use('/enterprises', require('./routes/enterprises.routes.js'));
 
 app.use((error, req, res, next) => {
   console.error(error.stack);
