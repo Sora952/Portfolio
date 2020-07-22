@@ -5,7 +5,7 @@ const Project = () => {
   const [project, setProject] = useState();
   const id = 1;
   useEffect(() => {
-    API.get(`/recipes/${id}`).then((res) => {
+    API.get(`/projects/${id}`).then((res) => {
       setProject(res.data.data);
       console.log(res.data.data);
     });
@@ -16,6 +16,7 @@ const Project = () => {
     return (
       <div>
         <p>Bvn</p>
+          <p>{project.name}</p>
       </div>
     )
   }

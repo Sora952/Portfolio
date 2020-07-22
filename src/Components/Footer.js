@@ -9,7 +9,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary">
       {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
-        Hackathon
+        Text
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -43,11 +43,11 @@ export default function Footer() {
     <div className={classes.root}>
       <footer
         className={classes.footer}
-        style={{ backgroundColor: "var(--blue)" }}
+        style={{ backgroundColor: "blue" }}
       >
         <Container maxWidth="sm">
           <Typography variant="body1">
-            La santé est le trésor de la vie.
+            tetxt
           </Typography>
           <Copyright />
         </Container>

@@ -3,7 +3,7 @@ class Database {
   init () {
     let config = {
       host: process.env.DB_HOST || 'localhost',
-      port: process.env.DB_PORT || '3307',
+      port: process.env.DB_PORT || '3306',
       user: process.env.DB_USER || 'root',
       password: process.env.DB_PASS || 'root',
       database: process.env.DB_NAME || 'checkpoint4',
@@ -43,24 +43,6 @@ class Database {
         return resolve();
       }
     });
-  }
-
-  async deleteAllData () {
-    if (process.env.NODE_ENV !== 'test') throw new Error('Cannot truncate all table if not in test env !');
-    const truncates = await this.getTableNames().then(rows => rows.map(row => `TRUNCATE ${row.TABLE_NAME};`).join(' '));
-    const sql = `SET FOREIGN_KEY_CHECKS=0; ${truncates} SET FOREIGN_KEY_CHECKS=1;`;
-    // console.log(sql);
-    return this.query(sql);
-  }
-
-  async getTableNames () {
-    if (!this._tableNames) {
-      this._tableNames = await this.query(`
-          SELECT TABLE_NAME
-          FROM INFORMATION_SCHEMA.TABLES where table_schema = '${process.env.DB_NAME_TEST || 'healthymood_api_database_test'}' and table_name != 'migrations'
-      `);
-    }
-    return this._tableNames;
   }
 }
 

@@ -13,7 +13,7 @@ class Projects {
 
   static async create (newProjects) {
     return db
-      .query('INSERT INTO projects SET ?', newProjects)
+      .query('INSERT INTO Project SET ?', newProjects)
       .then((res) => {
         newProjects.id = res.insertId;
         return newProjects;
@@ -22,7 +22,7 @@ class Projects {
 
   static async findById (id) {
     return db
-      .query('SELECT * FROM projects WHERE id = ?', [id])
+      .query('SELECT * FROM Project WHERE id = ?', [id])
       .then((rows) => {
         if (rows.length) {
           return Promise.resolve(rows[0]);
@@ -36,7 +36,7 @@ class Projects {
 
   static async nameAlreadyExists (name) {
     return db
-      .query('SELECT * FROM projects WHERE name = ?', [name])
+      .query('SELECT * FROM Project WHERE name = ?', [name])
       .then((rows) => {
         if (rows.length) {
           return Promise.resolve(true);
@@ -47,12 +47,12 @@ class Projects {
   }
 
   static async getAll (result) {
-    return db.query('SELECT * FROM projects');
+    return db.query('SELECT * FROM Project');
   }
 
   static async updateById (id, projects) {
     return db
-      .query('UPDATE projects SET name = ? WHERE id = ?', [
+      .query('UPDATE Project SET name = ? WHERE id = ?', [
         projects.name,
         id
       ])
@@ -60,7 +60,7 @@ class Projects {
   }
 
   static async remove (id) {
-    return db.query('DELETE FROM projects WHERE id = ?', id).then((res) => {
+    return db.query('DELETE FROM Project WHERE id = ?', id).then((res) => {
       if (res.affectedRows !== 0) {
         return Promise.resolve();
       } else {
@@ -72,7 +72,7 @@ class Projects {
   }
 
   static async removeAll (result) {
-    return db.query('DELETE FROM projects');
+    return db.query('DELETE FROM Project');
   }
 }
 

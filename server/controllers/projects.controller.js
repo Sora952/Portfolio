@@ -53,6 +53,7 @@ class ProjectsController {
   static async findOne (req, res) {
     try {
       const data = await Projects.findById(req.params.id);
+      console.log({data});
       res.send({ data });
     } catch (err) {
       if (err.kind === 'not_found') {
