@@ -3,7 +3,7 @@ const express = require('express');
 
 const app = express();
 const PORT =
-  process.env.PORT || 4000;
+  process.env.PORT || (process.env.NODE_ENV === 'test' ? 4001 : 4000);
 
 app.use(express.json());
 
