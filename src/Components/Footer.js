@@ -7,9 +7,9 @@ import Link from "@material-ui/core/Link";
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary">
-      {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Text
+      {"Camille © "}
+      <Link color="inherit" href='https://github.com/Sora952'>
+        Mon profil github
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -47,7 +47,7 @@ export default function Footer() {
       >
         <Container maxWidth="sm">
           <Typography variant="body1">
-            tetxt
+            camillebueno952@gmail.com
           </Typography>
           <Copyright />
         </Container>

@@ -15,8 +15,9 @@ const Project = () => {
   }
     return (
       <div>
-        <p>Bvn</p>
-          <p>{project.name}</p>
+        <h1>{project.name}</h1>
+          <p>{project.content}</p>
+          <p>{project.langage_id}</p>
       </div>
     )
   }

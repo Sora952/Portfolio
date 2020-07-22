@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 import Footer from './Components/Footer';
 import Admin from './Pages/Admin.js';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/project' component={Project} />
-        <Route exact path='admin' component={Admin} />
+        <Route exact path='/contact' component={Contact} />
+        <Route exact path='/admin' component={Admin} />
       </Switch>
       </main>
       <Footer />

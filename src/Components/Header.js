@@ -25,13 +25,13 @@ export default function ButtonAppBar() {
       <AppBar position="static">
         <Toolbar>
         <NavLink exact to='/'>
-          <Button color="inherit">Acceuil</Button>
+          <Button color="black">Acceuil</Button>
         </NavLink>
         <NavLink exact to='/project'>
-          <Button color="inherit">Projets</Button>
+          <Button color="black">Projets</Button>
         </NavLink>
-        <NavLink exact to='/'>
-          <Button color="inherit">Me contacter</Button>
+        <NavLink exact to='/contact'>
+          <Button color="black">Me contacter</Button>
         </NavLink>
         </Toolbar>
       </AppBar>
