@@ -6,6 +6,7 @@ const Home = () => {
         <div>
           <h1>Mon nom</h1>
           <h3>Mon intro</h3>
+          <h5>Visuel et crud ok, à revoir les bonnes pratiques + changer material ui par fait main</h5>
         </div>
         <Carousel />
         <div>
