@@ -1,0 +1,43 @@
+.send-form-project {
+  max-width:960px;
+  margin:auto;
+}
+.form-project {
+  padding:50px 0;
+}
+input, textarea {
+  height: 30px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border: 0px;
+  border-bottom: 1px solid var(--inputColor);
+  text-align: left;
+  background-color: transparent;
+}
+textarea {
+  height:100px;
+}
+label {
+  display:none;
+}
+.project-id {
+  display:flex;
+}
+.project-name, .project-persons {
+  width:calc(50% - 10px);
+}
+.project-name {
+  margin-right:10px;
+}
+.project-persons {
+  margin-left:10px;
+}
+.form-project h2 {
+  margin-bottom:50px;
+}
+
+.truc {
+  display: flex;
+  flex-direction: column;
+}
