@@ -25,10 +25,10 @@ export default function BasicTextFields() {
       name,
       persons,
       content,
-      link,
       created_at,
       language_id,
-      enterprise_id
+      enterprise_id,
+      link,
     });
     console.log(inputs);
   };
@@ -49,17 +49,17 @@ export default function BasicTextFields() {
           window.alert("Erreur lors de l'ajout d'un projet");
         });
     };
-    const upId = 1;
+    const upId = 2;
   const handleUpdate = (upId) => {
     const { name, persons, created_at, link, content, language_id, enterprise_id } = inputs;
       API.patch(`/projects/${upId}`, {
       name,
       persons,
       content,
-      link,
       created_at,
       language_id,
       enterprise_id,
+      link,
       upId
       }
       )
@@ -94,20 +94,20 @@ export default function BasicTextFields() {
             <label>Peronnes : </label>
             <input className='two-columns' type='number' name='persons' value={inputs.persons} onChange={handleChange} placeholder='Nombre de personnes' />
           </div>
-            <label>Langage id : </label>
+            <label>Langage id : (a mettre en checkbox)</label>
             <input className='two-columns' type='number' name='language_id' value={inputs.language_id} onChange={handleChange} placeholder='numéro du langage' />
             <label>Entreprise id : </label>
             <input className='two-columns' type='number' name='enterprise_id' value={inputs.enterprise_id} onChange={handleChange} placeholder="numéro de l\'entreprise" />
             </div>
             <button type='submit' className='btn-search'>Envoyer</button>
-            <button type='button' className='btn-search' onClick={() => handleUpdate(upId)}>Update</button>
+            <button type='button' className='btn-search' onClick={() => handleUpdate(upId)}>Update(id en dur, à changer)</button>
       </form>
     </div>
     </div>
 
     {project.map(p => {
       return (
-      <button onClick={(e) => handleDeleteProject(p.id)}>{p.name}</button>)
+      <button className='test' onClick={(e) => handleDeleteProject(p.id)}>{p.name}</button>)
     })}
 
     </div>

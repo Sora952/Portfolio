@@ -11,16 +11,14 @@ input, textarea {
   margin-top: 5px;
   margin-bottom: 30px;
   border: 0px;
-  border-bottom: 1px solid var(--inputColor);
+  border-bottom: 1px solid blue;
   text-align: left;
   background-color: transparent;
 }
 textarea {
   height:100px;
 }
-label {
-  display:none;
-}
+
 .project-id {
   display:flex;
 }
@@ -40,4 +38,18 @@ label {
 .truc {
   display: flex;
   flex-direction: column;
+}
+
+.test {
+  width: 50%;
+  background-color: blueviolet;
+  border-radius: 12px;
+  overflow-wrap: break-word;
+}
+
+.test:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blueviolet;
+  background-color: chocolate;
 }

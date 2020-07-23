@@ -33,6 +33,8 @@ const useStyles = makeStyles((theme) => ({
       theme.palette.type === "light"
         ? theme.palette.grey[200]
         : theme.palette.grey[800],
+    position: "relative",
+    bottom: "0",
   },
 }));
 
@@ -43,7 +45,7 @@ export default function Footer() {
     <div className={classes.root}>
       <footer
         className={classes.footer}
-        style={{ backgroundColor: "blue" }}
+        style={{ backgroundColor: "blue", bottom: "0"}}
       >
         <Container maxWidth="sm">
           <Typography variant="body1">
