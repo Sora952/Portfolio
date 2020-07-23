@@ -1,3 +1,7 @@
+https://docs.google.com/spreadsheets/d/1zDYGM0Tcw0zXFrc_HfEM_k7u9o-l8K6G7P3DHB9mlLc/edit#gid=0
+https://www.figma.com/file/XTRzHE9Uw639fiEauuQeuf/Figma-portfolio?node-id=0%3A1
+https://docs.google.com/spreadsheets/d/1roCDUfsE1GJQp-OGjm0d3MMBO6AbelVHryYvhP-MDx0/edit#gid=0
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
