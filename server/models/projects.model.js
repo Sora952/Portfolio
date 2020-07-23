@@ -9,6 +9,7 @@ class Projects {
     this.created_at = projects.created_at;
     this.language_id = projects.language_id;
     this.enterprise_id = projects.enterprise_id;
+    this.link = projects.link;
   }
 
   static async create (newProjects) {
@@ -52,13 +53,14 @@ class Projects {
 
   static async updateById (id, projects) {
     return db
-      .query('UPDATE checkpoint4.Project SET name = ?, persons = ?, content = ?, created_at = ?, language_id = ?, enterprise_id = ? WHERE id = ?', [
+      .query('UPDATE checkpoint4.Project SET name = ?, persons = ?, content = ?, created_at = ?, language_id = ?, enterprise_id = ?, link = ? WHERE id = ?', [
         projects.name,
         projects.persons,
         projects.content,
         projects.created_at,
         projects.language_id,
         projects.enterprise_id,
+        projects.link,
         id
       ])
       .then(() => this.findById(id));
