@@ -9,7 +9,7 @@ function ControlledCarousel () {
   const [carouselItems] = useState([
     {
       className: 'background-container d-block w-100',
-      src: 'https://www.healthymood.fr/wp-content/uploads/smoothies-healthy-comfort-food.jpg',
+      src: 'https://fox8.com/wp-content/uploads/sites/12/2020/06/8-day-1.jpg',
       alt: 'Second slide',
       title: 'Mon premier projet',
       caption: 'A remplir',

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import API from '../Services/API';
 
 const Project = () => {
-  const [project, setProject] = useState();
+  const [project, setProject] = useState([]);
   const id = 1;
   useEffect(() => {
     API.get(`/projects/${id}`).then((res) => {
@@ -17,7 +17,7 @@ const Project = () => {
       <div>
         <h1>{project.name}</h1>
           <p>{project.content}</p>
-          <p>{project.langage_id}</p>
+          <p>{project.language_id}</p>
       </div>
     )
   }
