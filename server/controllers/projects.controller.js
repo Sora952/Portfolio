@@ -39,7 +39,7 @@ class ProjectsController {
           content: m.content,
           created_at: m.created_at,
           language_id: m.language_id,
-          enterprise: m.enterprise_id
+          enterprise_id: m.enterprise_id
         }));
       res.send({ data });
     } catch (err) {
