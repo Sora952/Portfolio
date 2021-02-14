@@ -1,5 +1,7 @@
 **Hey ! toi, oui toi qui viens voir mon code de mon portfolio, tout d'abord, merci de prendre un peu de ton temps pour voir mes compétences plus en profondeur. Ensuite, le code ayant été fait en moins de 36h (un petit hackathon qui m'a couté chez en sommeille ^^') sache que le code est pas du tout optimisé, et est très loin d'être propre, et je m'en excuse, car je n'avais que peu de temps ayant mon employeur qui menace de fermer. Je me suis donc fait à l'arrache un portfolio pour tenter de ne pas perdre ma formation. J'aimerais à l'avenir ajouter quelques exemples de ce que je sais faire comme un CRUD lié a une API, et d'autres petits exemples comme ça. Si tu veux voir un peu mieux mes compétences, je te recommande de voir le code d'Agileo et celui de Healthymood. Le code de GoFitnessCloud et Influx étant à mon employeur, je ne peux te le donner sans son autorisation ^^'. Mais j'ai quand même mis un lien et des screens sur mon portfolio pour te faire une idée ! :)**
 
+Lien de mon portfolio: -https://camillebueno-portfolio.netlify.app
+
 Agileo: -https://github.com/WildCodeSchool/2020-11-wns-lyon-project-agileo-front
 
 Healthymood: -https://github.com/Sora952/healthymood-front
