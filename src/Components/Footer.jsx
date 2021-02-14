@@ -6,9 +6,9 @@ import Link from "@material-ui/core/Link";
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary">
+    <Typography style={{color: "white"}} variant="body2" color="textSecondary">
       {"Camille © "}
-      <Link color="inherit" href='https://github.com/Sora952'>
+      <Link style={{textDecoration: 'none', color: "white"}} color="inherit" href='https://github.com/Sora952'>
         Mon profil github
       </Link>{" "}
       {new Date().getFullYear()}
@@ -45,10 +45,10 @@ export default function Footer() {
     <div className={classes.root}>
       <footer
         className={classes.footer}
-        style={{ backgroundColor: "blue", bottom: "0"}}
+        style={{ backgroundColor: "#343A40", bottom: "0"}}
       >
         <Container maxWidth="sm">
-          <Typography variant="body1">
+          <Typography variant="body1" style={{color: "white"}}>
             camillebueno952@gmail.com
           </Typography>
           <Copyright />
