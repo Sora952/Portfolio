@@ -1,29 +1,47 @@
 import React, {useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Link} from 'react-router-dom';
-import '../Styles/Carousel.css'
+//import {Link} from 'react-router-dom';
+import '../Styles/Carousel.css';
 
 function ControlledCarousel () {
   const [index, setIndex] = useState(0);
   const [carouselItems] = useState([
     {
       className: 'background-container d-block w-100',
-      src: 'https://fox8.com/wp-content/uploads/sites/12/2020/06/8-day-1.jpg',
+      src: require('../assets/GFC.png'),
+      alt: 'First slide',
+      title: 'GoFitnessCloud',
+      caption: 'Projet d\'entreprise, Réalisé sur 5 mois environ avec un collègue pour l\'entreprise DATADICT.',
+      button: 'Voir GoFitnessCloud',
+      link: 'https://app.gofitness.cloud/'
+    },
+    {
+      className: 'background-container d-block w-100',
+      src: require('../assets/Influx.png'),
       alt: 'Second slide',
-      title: 'Mon premier projet',
-      caption: 'A remplir',
-      button: 'voir mon premier projet',
-      link: 'project'
+      title: 'Influx Agency',
+      caption: 'Second projet chez DATADICT, Réalisé sur 2 mois avec un collègue.',
+      button: 'Voir Influx Agency',
+      link: ''
     },
     {
       className: 'background-container d-block w-100',
       src: 'https://www.healthymood.fr/wp-content/uploads/nom7-2.jpg',
       alt: 'Third slide',
-      title: 'Mon deuxième projet !',
-      caption: 'Texte',
-      button: 'Voir mon deuxième projet',
-      link: 'project'
+      title: 'HealthyMood',
+      caption: 'Dernier projet de ma première formation développeur web, Projet fait en 8 semaines.',
+      button: 'Voir HealthyMood',
+      link: 'https://vigorous-carson-5a82d1.netlify.app/'
+    },
+    {
+      className: 'background-container d-block w-100',
+      src: require('../assets/AgileoHome.png'),
+      alt: 'Four slide',
+      title: 'Agileo',
+      caption: 'Projet de ma formation en alternance, il sera fait en 1 an.',
+      button: 'Voir Agileo',
+      link: ''
     }
   ]);
 
@@ -60,7 +78,12 @@ function ControlledCarousel () {
               <Carousel.Caption className='carousel-title'>
                 <h3>{e.title}</h3>
                 {e.caption ? <p>{e.caption}</p> : ''}
-                <Link to={`/${e.link}`}><button className='carousel-button'>{e.button}</button></Link>
+                {e.link !== '' ?
+                  <a style={{textDecoration: 'none'}} href={e.link} target='_blank' rel='noreferrer noopener'><button className='carousel-button'>{e.button}</button></a>
+                  :
+                  <button className='carousel-button'>{'Site indisponible pour le moment.'}</button>
+                }
+                {/* <Link to={`/${e.link}`}><button className='carousel-button'>{e.button}</button></Link> */}
               </Carousel.Caption>
             </div>
           </Carousel.Item>
