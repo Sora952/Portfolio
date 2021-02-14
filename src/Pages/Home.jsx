@@ -14,8 +14,10 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = () => {
   const classes = useStyles();
-    const myName = "<strong>Salut à toi, visiteur !</strong> Je m'appelle Camille Bueno et j'ai actuellement 23 ans. Je te souhaite une bonne visite sur mon portfolio, et j'espère que tu me diras ce que tu en pense ;). <em>Je vais l'améliorer jour après jour !</em>"
-  //   const [chipValue, setChipValue] = useState([]);
+    const greeting = "<strong>Salut à toi, visiteur !</strong>";
+    const myName = "Je m'appelle Camille Bueno, j'ai actuellement 23 ans et je suis un <strong>développeur fullStack Javascript/React</strong>.";
+    const explain = "Je te souhaite une bonne visite sur mon portfolio, et j'espère que tu me diras ce que tu en pense ;). <em>Je vais l'améliorer jour après jour !</em>";
+    //   const [chipValue, setChipValue] = useState([]);
   //   const [errorChip, setErrorChip] = useState('')
   //   const [chipData, setChipData] = useState([
   //     // { key: 0, label: 'Angular' },
@@ -55,11 +57,15 @@ const Home = () => {
           loop: true,
         }}
         onInit={(typewriter) => {
-          typewriter.typeString(myName)
+          typewriter.typeString(greeting)
           
             // .callFunction(() => {
             //   console.log('String typed out!');
             // })
+            .pauseFor(2000)
+            .typeString(myName)
+            .pauseFor(2000)
+            .typeString(explain)
             .pauseFor(2000)
             .deleteAll(1)
             // .callFunction(() => {
@@ -108,7 +114,7 @@ const Home = () => {
               <img src={require('../assets/graphql.png')} style={{maxHeight: "50px", maxWidth: "50px"}} alt="graphql" title="graphql" />
             </div>
           </div>
-          <span style={{fontSize: "20px", fontWeight: "600"}}>J'ai aussi pas mal utilisé ExpressJS, AppolloServer, un tout petit peu nextJS et mongo/mongoose. Utilisation aussi de KeystoneJS, API rest, etc...</span>
+          <span style={{fontSize: "20px", fontWeight: "600"}}>J'ai aussi pas mal utilisé ExpressJS, AppolloServer, un tout petit peu mongo/mongoose. Utilisation aussi de KeystoneJS, API rest, etc...</span>
           <span style={{fontSize: "20px", fontWeight: "600"}}>Je n'ai pas encore eu le temps de le mettre en ligne, mais <a style={{textDecoration: 'underline', color: "black", fontWeight: "600"}} href='https://github.com/WildCodeSchool/healthymood-api' target='_blank' rel='noreferrer noopener'>voici un lien vers un repository github d'une API</a> faites par mes collègues et moi même en NodeJS/Express/MySQL en mode API Rest, CRUD inclut.</span>
         </section>
         {/* <ChipInput
