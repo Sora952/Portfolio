@@ -113,7 +113,7 @@ const Home = () => {
             </div>
           </div>
           <div style={{width: "80%", margin: "auto"}}>
-            <span style={{fontSize: "20px", fontWeight: "600"}}>J'ai aussi pas mal utilisé ExpressJS, AppolloServer, un tout petit peu mongo/mongoose. Utilisation aussi de KeystoneJS, API rest, etc...</span>
+            <span style={{fontSize: "20px", fontWeight: "600"}}>J'ai aussi pas mal utilisé ExpressJS, Appollo-Client, un tout petit peu mongo/mongoose. Utilisation aussi de KeystoneJS, API rest, etc...</span>
             <span style={{fontSize: "20px", fontWeight: "600"}}>Je n'ai pas encore eu le temps de le mettre en ligne, mais <a style={{textDecoration: 'underline', color: "black", fontWeight: "600"}} href='https://github.com/WildCodeSchool/healthymood-api' target='_blank' rel='noreferrer noopener'>voici un lien vers un repository github d'une API</a> faites par mes collègues et moi même en NodeJS/Express/MySQL en mode API Rest, CRUD inclut.</span>
           </div>
         </section>
