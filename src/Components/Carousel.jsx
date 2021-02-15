@@ -21,9 +21,9 @@ function ControlledCarousel () {
       src: require('../assets/Influx.png'),
       alt: 'Second slide',
       title: 'Influx Agency',
-      caption: 'Second projet chez DATADICT, Réalisé sur 2 mois avec un collègue.',
-      button: 'Voir Influx Agency',
-      link: ''
+      caption: 'Second projet chez DATADICT, Réalisé sur 2 mois avec un collègue. Le site n\'étant pas encore en ligne, voici la landingpage fait sous webflow',
+      button: 'Voir la landingpage',
+      link: 'https://www.influxagency.fr/'
     },
     {
       className: 'background-container d-block w-100',
@@ -76,8 +76,8 @@ function ControlledCarousel () {
             <div className={e.className} style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('${e.src}')` }} />
             <div className='carousel-content'>
               <Carousel.Caption className='carousel-title'>
-                <h3>{e.title}</h3>
-                {e.caption ? <p>{e.caption}</p> : ''}
+                <h3 style={{textShadow: "3px 3px 5px black"}}>{e.title}</h3>
+                {e.caption ? <p style={{textShadow: "3px 3px 5px black"}}>{e.caption}</p> : ''}
                 {e.link !== '' ?
                   <a style={{textDecoration: 'none'}} href={e.link} target='_blank' rel='noreferrer noopener'><button className='carousel-button'>{e.button}</button></a>
                   :
