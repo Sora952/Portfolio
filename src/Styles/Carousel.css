@@ -6,7 +6,7 @@
 }
 .background-container{
   width:100%;
-  height:600px;
+  height:500px;
   background-position: center;
   background-size: cover;
 }
@@ -30,11 +30,11 @@
   position: relative;
 } 
 .carousel-button {
-  padding: 5px;
-    background-color: var(--lightAccentColor);
+  padding: 10px;
+    background-color: #343A40;
     color: #fff;
     font-weight: 500;
-    width: 200px;
+    width: 300px;
     outline-style: none;
     border: 0;
     margin: 0 auto;
@@ -44,7 +44,7 @@
   outline: none; 
 }
 .carousel-button:hover {
-  background-color: var(--accentColor);
+  background-color: #51585f;
 }
 .carousel-caption {
   position: absolute;

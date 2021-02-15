@@ -81,7 +81,7 @@ function ControlledCarousel () {
                 {e.link !== '' ?
                   <a style={{textDecoration: 'none'}} href={e.link} target='_blank' rel='noreferrer noopener'><button className='carousel-button'>{e.button}</button></a>
                   :
-                  <button className='carousel-button'>{'Site indisponible pour le moment.'}</button>
+                  <button className='carousel-button'>Site indisponible pour le moment.</button>
                 }
                 {/* <Link to={`/${e.link}`}><button className='carousel-button'>{e.button}</button></Link> */}
               </Carousel.Caption>
