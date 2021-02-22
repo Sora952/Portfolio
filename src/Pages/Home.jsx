@@ -74,18 +74,17 @@ const Home = () => {
           />
           <br />
           <p>Je m'appelle Camille Bueno, j'ai actuellement 23 ans et je suis un <strong>développeur fullStack React/NodeJS/JavaScript</strong>.</p>
-          <p>Si vous vous trouvez sur ma page ce n'est sûrement pas par hasard. Si je suis développeur web aujourd'hui, sachez que ça n'a pas été toujours le cas, ayant travaillé dans les cuisines collectives, celui-ci ne m'apportait pas un épanouissement professionnel. J'ai donc décidé de me reprendre en main, et de me reconvertir au milieu de l'informatique auprès de la WildCodeSchool de Lyon. Ce que je peux vous affirmer, c'est que ce fût un choix judicieux!</p>
-          <p>Passionné des technologies, j'ai commencé à me former en autodidacte sur le développement web en 2019, puis j'ai choisi de faire une reconversion dans ce métier.</p>
+          <p>Si vous vous trouvez sur ma page ce n'est sûrement pas par hasard. Si je suis développeur web aujourd'hui, sachez que ça n'a pas été toujours le cas, ayant travaillé dans les cuisines collectives, celui-ci ne m'apportait pas un épanouissement professionnel. J'ai donc décidé de me reprendre en main, et étant passionné des technologies, j'ai commencé à me former en autodidacte sur le développement web en 2019, puis j'ai choisi de faire une reconversion dans le milieu de l'informatique auprès de la WildCodeSchool de Lyon. Ce que je peux vous affirmer, c'est que ce fût un choix judicieux!</p>
 
           <p>De ce fait, je suis actuellement en formation développeur web et web mobile à la Wild Code School de Lyon, je me forme aux métiers du web, et en particulier sur l'écosystème Javascript/NodeJS pour pouvoir parfaire mes connaissances en tant que développeur web FullStack.</p>
 
           <p>Grâce à cela, je suis actuellement en alternance depuis début septembre 2020 chez Datadict, plus précisément sur leur projet GoFitnessCloud et le second, Influx Agency, ce qui m'a permis d'accroitre mes connaissances apprises récemment, et de gagner de l'expérience rapidement en entreprise, tout en continuant mon cursus de formation, d'une période d'un an.
           </p>
-          <p>Je vous souhaite une bonne visite sur mon portfolio, et j'espère que vous me direz ce que vous en pensez ;). <em>Je vais l'améliorer jour après jour !</em></p>
+          <p><em>Je vous souhaite une bonne visite sur mon portfolio, et j'espère que vous me direz ce que vous en pensez !</em></p>
         </div>
         </section>
         <section style={{backgroundColor: "gray", height: "100%", padding: "20px"}}>
-        <h3>Mes principales compétences actuelles:</h3>
+        <h3>Mes compétences principales:</h3>
           <div style={{width: "80%", display: "flex", justifyContent: "space-between", margin: "auto", marginBottom: "30px", marginTop: "30px"}}>
             <div style={{display: "flex", flexDirection: "column"}}>
               <img src={require('../assets/css-3.png')} style={{maxHeight: "100px", maxWidth: "100px"}} alt="css3" title="css3" />
@@ -114,7 +113,7 @@ const Home = () => {
           </div>
           <div style={{width: "80%", margin: "auto"}}>
             <span style={{fontSize: "20px", fontWeight: "600"}}>J'ai aussi pas mal utilisé ExpressJS, Appollo-Client, un tout petit peu mongo/mongoose. Utilisation aussi de KeystoneJS, API rest, etc...</span>
-            <span style={{fontSize: "20px", fontWeight: "600"}}>Je n'ai pas encore eu le temps de le mettre en ligne, mais <a style={{textDecoration: 'underline', color: "black", fontWeight: "600"}} href='https://github.com/WildCodeSchool/healthymood-api' target='_blank' rel='noreferrer noopener'>voici un lien vers un repository github d'une API</a> faites par mes collègues et moi même en NodeJS/Express/MySQL en mode API Rest, CRUD inclut.</span>
+            <span style={{fontSize: "20px", fontWeight: "600"}}><a style={{textDecoration: 'underline', color: "black", fontWeight: "600"}} href='https://github.com/WildCodeSchool/healthymood-api' target='_blank' rel='noreferrer noopener'>Voici un lien vers un repository github d'une API</a> faites par mes collègues et moi même en NodeJS/Express/MySQL en mode API Rest, CRUD inclut.</span>
           </div>
         </section>
         <section style={{ marginTop: "30px", height: "100%", marginBottom: "30px", overflowWrap: "break-word"}}>
@@ -175,7 +174,7 @@ const Home = () => {
                                 <h3>Collèges et Hôpital</h3>
                                 <h4>Agent polyvalent en restauration</h4>
                                 <p className="text-muted">
-                                    <small className="glyphicon glyphicon-time"></small>2014-2019</p>
+                                    <small className="glyphicon glyphicon-time"></small>Septembre 2014 =&gt; Juillet 2019</p>
                             </div>
                             <div className="timeline-body">
                                 <p>Services au self</p>
@@ -201,7 +200,7 @@ const Home = () => {
           <Carousel />
         </div>
         <div>
-          <p style={{overflowWrap: "break-word", marginTop: "20px", paddingBottom: "15px", fontSize: "22px"}}>Ps: certains projets ne sont pas encore mis en ligne comme <NavLink exact to='/influx-img' style={{color: "Black", fontWeight: "600", textDecoration: "underline"}}>Influx</NavLink> ou Agileo (clique ici pour voir les screens), ou bien certains<br />
+          <p style={{overflowWrap: "break-word", width: "80%", marginTop: "20px", paddingBottom: "15px", fontSize: "22px"}}>Ps: certains projets ne sont pas encore mis en ligne comme <NavLink exact to='/influx-img' style={{color: "Black", fontWeight: "600", textDecoration: "underline"}}>Influx</NavLink> ou Agileo (clique ici pour voir les screens), ou bien certains<br />
           ont eu leur base de données supprimée comme Healthymood par ma formation (pour leurs besoins peronnels). Je ferais des screens au besoin.</p>
         </div>
 
