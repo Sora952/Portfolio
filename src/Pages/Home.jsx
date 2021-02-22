@@ -200,7 +200,7 @@ const Home = () => {
           <Carousel />
         </div>
         <div>
-          <p style={{overflowWrap: "break-word", width: "80%", marginTop: "20px", paddingBottom: "15px", fontSize: "22px"}}>Ps: certains projets ne sont pas encore mis en ligne comme <NavLink exact to='/influx-img' style={{color: "Black", fontWeight: "600", textDecoration: "underline"}}>Influx</NavLink> ou Agileo (clique ici pour voir les screens), ou bien certains<br />
+          <p style={{overflowWrap: "break-word", width: "80%", margin: "auto", marginTop: "20px", paddingBottom: "15px", fontSize: "22px"}}>Ps: certains projets ne sont pas encore mis en ligne comme <NavLink exact to='/influx-img' style={{color: "Black", fontWeight: "600", textDecoration: "underline"}}>Influx</NavLink> ou Agileo (clique ici pour voir les screens), ou bien certains<br />
           ont eu leur base de données supprimée comme Healthymood par ma formation (pour leurs besoins peronnels). Je ferais des screens au besoin.</p>
         </div>
 
