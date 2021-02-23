@@ -5,11 +5,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import Carousel from '../Components/Carousel';
 import Typewriter from 'typewriter-effect';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
+
+const truc = require('../assets/computer-code-editor.jpg')
 //import ChipInput from 'material-ui-chip-input';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-      
+      fontFamily: 'Roboto',
   },
 }));
 
@@ -46,10 +48,21 @@ const Home = () => {
 
     return (
       <div className={classes.root}>
+
+        <section>
+          <div style={{height: "100vh", width: "100%", backgroundImage: `url(${truc})`, backgroundSize: "cover", display: "flex", justifyContent: "center", alignItems: "center"}}>
+            <div style={{backgroundColor: "white", width: "40%", padding: "60px", overflowWrap: "break-word"}}>
+                <h1 style={{fontSize: "38px"}}>Salut !</h1>
+                <h1 style={{fontSize: "28px", marginTop: "25px", marginBottom: "25px"}}>Je m'appelle Camille Bueno, j'ai actuellement 23 ans.</h1>
+                <h3 style={{fontSize: "30px"}}>Je suis <strong>développeur fullStack React/NodeJS/JavaScript</strong>.</h3>
+            </div>
+          </div>
+        </section>
+
         <section>
         
         <div style={{backgroundColor: "#DDDDDD", fontSize: "22px", padding: "20px", borderRadius: "4px", width: "80%", margin: "auto", marginTop: "30px", marginBottom: "30px"}}>
-          
+        <h1>A propos de moi</h1>
         <Typewriter
         options={{
           //strings: ['Hello', 'World'],
@@ -73,7 +86,6 @@ const Home = () => {
           }}
           />
           <br />
-          <p>Je m'appelle Camille Bueno, j'ai actuellement 23 ans et je suis un <strong>développeur fullStack React/NodeJS/JavaScript</strong>.</p>
           <p>Si vous vous trouvez sur ma page ce n'est sûrement pas par hasard. Si je suis développeur web aujourd'hui, sachez que ça n'a pas été toujours le cas, ayant travaillé dans les cuisines collectives, celui-ci ne m'apportait pas un épanouissement professionnel. J'ai donc décidé de me reprendre en main, et étant passionné des technologies, j'ai commencé à me former en autodidacte sur le développement web en 2019, puis j'ai choisi de faire une reconversion dans le milieu de l'informatique auprès de la WildCodeSchool de Lyon. Ce que je peux vous affirmer, c'est que ce fût un choix judicieux!</p>
 
           <p>De ce fait, je suis actuellement en formation développeur web et web mobile à la Wild Code School de Lyon, je me forme aux métiers du web, et en particulier sur l'écosystème Javascript/NodeJS pour pouvoir parfaire mes connaissances en tant que développeur web FullStack.</p>
@@ -83,7 +95,7 @@ const Home = () => {
           <p><em>Je vous souhaite une bonne visite sur mon portfolio, et j'espère que vous me direz ce que vous en pensez !</em></p>
         </div>
         </section>
-        <section style={{backgroundColor: "gray", height: "100%", padding: "20px"}}>
+        <section style={{backgroundColor: "#383333", color: "white", height: "100%", padding: "20px"}}>
         <h3>Mes compétences principales:</h3>
           <div style={{width: "80%", display: "flex", justifyContent: "space-between", margin: "auto", marginBottom: "30px", marginTop: "30px"}}>
             <div style={{display: "flex", flexDirection: "column"}}>
@@ -113,8 +125,8 @@ const Home = () => {
           </div>
           <div style={{width: "80%", margin: "auto"}}>
             <span style={{fontSize: "20px", fontWeight: "600"}}>J'ai aussi pu utilisé ExpressJS, Appollo-Client, un peu mongo/mongoose. Utilisation aussi de KeystoneJS et NextJS, API rest, TailwindCSS, Styled-component, MaterialUI, Reactstrap, DateFNS, etc...</span>
-            <span style={{fontSize: "20px", fontWeight: "600"}}>J'ai également essayé de mon côté par curiosité du PHP et de l'angular, mais je ne maitrise acutellement pas ces derniers.</span>
-            <span style={{fontSize: "20px", fontWeight: "600"}}><a style={{textDecoration: 'underline', color: "black", fontWeight: "600"}} href='https://github.com/WildCodeSchool/healthymood-api' target='_blank' rel='noreferrer noopener'>Voici un lien vers un repository github d'une API</a> faites par mes collègues et moi même en NodeJS/Express/MySQL en mode API Rest, CRUD inclut.</span>
+            <span style={{fontSize: "20px", fontWeight: "600"}}> J'ai également essayé de mon côté par curiosité du PHP et de l'angular, mais je ne maitrise acutellement pas ces derniers. </span>
+            <span style={{fontSize: "20px", fontWeight: "600"}}><a style={{textDecoration: 'underline', color: "white", fontWeight: "600"}} href='https://github.com/WildCodeSchool/healthymood-api' target='_blank' rel='noreferrer noopener'>Voici un lien vers un repository github d'une API</a> faites par mes collègues et moi même en NodeJS/Express/MySQL en mode API Rest, CRUD inclut.</span>
           </div>
         </section>
         <section style={{ marginTop: "30px", height: "100%", marginBottom: "30px", overflowWrap: "break-word"}}>
@@ -195,13 +207,13 @@ const Home = () => {
     </section>
 
         </section>
-        <section style={{backgroundColor: "gray", marginTop: "30px", height: "100%", marginBottom: "-16px"}}>
+        <section style={{backgroundColor: "#383333", color: "white", marginTop: "30px", height: "100%", marginBottom: "-16px"}}>
         <div style={{width: "80%", margin: "auto", marginTop: "30px"}}>
           <h3 style={{paddingTop: "25px", paddingBottom: "15px"}}>Voici quelques-uns de mes principaux projets: </h3>
           <Carousel />
         </div>
         <div>
-          <p style={{overflowWrap: "break-word", width: "80%", margin: "auto", marginTop: "20px", paddingBottom: "15px", fontSize: "22px"}}>Ps: certains projets ne sont pas encore mis en ligne comme <NavLink exact to='/influx-img' style={{color: "Black", fontWeight: "600", textDecoration: "underline"}}>Influx</NavLink> ou Agileo (clique ici pour voir les screens), ou bien certains<br />
+          <p style={{overflowWrap: "break-word", width: "80%", margin: "auto", marginTop: "20px", paddingBottom: "35px", fontSize: "22px"}}>Ps: certains projets ne sont pas encore mis en ligne comme <NavLink exact to='/influx-img' style={{color: "white", fontWeight: "600", textDecoration: "underline"}}>Influx</NavLink> ou Agileo (clique ici pour voir les screens), ou bien certains<br />
           ont eu leur base de données supprimée comme Healthymood par ma formation (pour leurs besoins peronnels). Je ferais des screens au besoin.</p>
         </div>
 
