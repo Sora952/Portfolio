@@ -9,6 +9,9 @@ import '../Styles/Header.css';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    position: "fixed",
+    width: "100%",
+    zIndex: "9999"
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -41,21 +44,21 @@ export default function ButtonAppBar() {
         <div className={classes.machin}>
           <div>
         <NavLink exact to='/' style={{textDecoration: 'none',}}>
-          <Button color="default" className={classes.navColor}>Acceuil</Button>
+          <Button title='Acceuil' color="default" className={classes.navColor}>Acceuil</Button>
         </NavLink>
         <a style={{textDecoration: 'none', color: "white", fontWeight: "600"}} href='https://github.com/Sora952' target='_blank' rel='noreferrer noopener'>
-          <Button color="default" className={classes.navColor}>Mon github</Button>
+          <Button title='Mon Github' color="default" className={classes.navColor}>Mon Github</Button>
         </a>
         <a style={{textDecoration: 'none', color: "white", fontWeight: "600"}} href='https://www.linkedin.com/in/camillebueno/' target='_blank' rel='noreferrer noopener'>
-          <Button color="default" className={classes.navColor}>Mon Linkedin</Button>
+          <Button title='Mon Linkedin' color="default" className={classes.navColor}>Mon Linkedin</Button>
         </a>
         {/* <NavLink exact to='/crud-user'>
           <Button color="white" className={classes.navColor}>Voir un PokéCrud</Button>
         </NavLink> */}
         </div>
-        <div style={{fontWeight: "600"}}>
-          camilleBueno952@gmail.com
-          06 08 64 12 55
+        <div style={{fontWeight: "500", display: "flex"}}>
+          <span style={{marginRight: "15px"}}>camilleBueno952@gmail.com</span>
+          <span>06 08 64 12 55</span>
         </div>
         </div>
         {/* <NavLink exact to='/project'>
